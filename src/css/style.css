@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+.cart{
+    display:flex;
+    flex-direction: column;
+    width: 30em;
+    height:fit-content;
+    right: 0;
+    margin-top: 5.4em;
+    background : #454545;
+    position: absolute;
+    color: aliceblue;
+    z-index: 5;
+}
+
+.item {
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+}
+
+.item > p {
+    align-self:center;
+}
+
+.amount {
+    align-self: center;
+}
+
+.amount-of-items {
+    margin-right: 2rem;
+}
+
+.flex-buttons {
+    display:flex;
+    justify-content: space-around;
+}
+
+.buyBtn {
+    width: 6rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 0 16px;
+    border-radius: 4px;
+    color: #fff;
+    background: #5c636e;
+    line-height: 1.15;
+    font-size: 14px;
+    height: 36px;
+    word-spacing: 0px;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+
+}
+
+.card {
+    width: 12rem;
+}
+
+#navbar-container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 2rem;
+    max-width: 100%;
+    gap:10px;
+}
+
+.add-to-cart {
+    width: 6rem;
+    height:2.5rem;
+    border-radius: 12px;
+    border:none;
+    background-color:aqua;
+}
+
+.totalAmountOfItemsInCart {
+    background-color: red;
+    border-radius: 50%;
+    width: 25px;
+    padding-top: 1px;
+    height: 25px;
+    position: absolute;
+}
+
+@media screen and (max-width: 600px){
+    #navbar-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart{
+        width: 100%;
+        height: fit-content;
+        padding: 1em;
+        background: blue;
+        position: relative;
+        margin: 0;
+        margin-bottom: 2em;
+        color: aliceblue;
+    }
+    .product-container{
+        justify-content: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+}
