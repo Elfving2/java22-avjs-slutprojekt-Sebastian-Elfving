@@ -52,7 +52,7 @@ export default function DisplayShoppingItems({setarrayOfProducts, arrayOfProduct
 
     return(
         <>
-            <input type="text" onChange={handleChange}/>
+            <div className="text-filed-container"><input type="text" placeholder="Product name" className="text-field" onChange={handleChange}/></div>
             <div className="product-container">
                 {
                     search.map((product) => 

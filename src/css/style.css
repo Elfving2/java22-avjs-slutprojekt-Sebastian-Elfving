@@ -99,6 +99,26 @@
     position: absolute;
 }
 
+.text-filed-container {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.text-field{
+    width: 20rem;
+    height: 3rem;
+    border-radius: 25px;
+    border: none;
+    background-color:#5c636e;
+    padding-left: 7rem;
+    color:#fff;
+}
+.text-field::placeholder {
+    /* text-align: center; */
+    color: #fff;
+}
+
 @media screen and (max-width: 600px){
     #navbar-container{
         display: flex;
@@ -108,7 +128,6 @@
         width: 100%;
         height: fit-content;
         padding: 1em;
-        background: blue;
         position: relative;
         margin: 0;
         margin-bottom: 2em;
